@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\src">
+      <UniqueIdentifier>{3d091cb4-a956-408b-a44c-4b44d9e31e3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\include">
+      <UniqueIdentifier>{12b0adf5-c690-4308-827f-8f73bcac1590}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\include\render">
+      <UniqueIdentifier>{fb0460d7-b743-4bd6-b0e5-7267eae3fd08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\include\entities">
+      <UniqueIdentifier>{bae0d9f0-c532-4f55-b059-a3ffa4311ec7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\include\components">
+      <UniqueIdentifier>{7cd61d6e-6e47-45e6-85ca-15f5dc8a5a49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\render">
+      <UniqueIdentifier>{dfe492fe-d233-4ac7-8d5f-151c5cad45ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\entities">
+      <UniqueIdentifier>{654f79fd-95cc-4e43-b14b-3d73e81e311e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\components">
+      <UniqueIdentifier>{388aac3c-9689-48be-854b-3a18f4a1d7c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\include\scenes">
+      <UniqueIdentifier>{93925de7-1ab5-44bd-a4fd-cd5886738588}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\scenes">
+      <UniqueIdentifier>{f9d695b9-2bbc-4c39-850c-a0bb8c25a820}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\res">
+      <UniqueIdentifier>{0f78ad15-c0b7-488f-b57b-30ff19dfcb40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\res\shaders">
+      <UniqueIdentifier>{8fe1dfb1-5898-471d-8118-215d3830109a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\glad.c">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\render\window.cpp">
+      <Filter>Source Files\src\render</Filter>
+    </ClCompile>
+    <ClCompile Include="src\render\renderer.cpp">
+      <Filter>Source Files\src\render</Filter>
+    </ClCompile>
+    <ClCompile Include="src\render\shader.cpp">
+      <Filter>Source Files\src\render</Filter>
+    </ClCompile>
+    <ClCompile Include="src\render\mesh.cpp">
+      <Filter>Source Files\src\render</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scenes\editor_scene.cpp">
+      <Filter>Source Files\src\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\entities\camera.cpp">
+      <Filter>Source Files\src\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="src\entities\model.cpp">
+      <Filter>Source Files\src\entities</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\engine\render\window.h">
+      <Filter>Source Files\include\render</Filter>
+    </ClInclude>
+    <ClInclude Include="include\engine\render\renderer.h">
+      <Filter>Source Files\include\render</Filter>
+    </ClInclude>
+    <ClInclude Include="include\engine\render\shader.h">
+      <Filter>Source Files\include\render</Filter>
+    </ClInclude>
+    <ClInclude Include="include\engine\render\mesh.h">
+      <Filter>Source Files\include\render</Filter>
+    </ClInclude>
+    <ClInclude Include="include\engine\scenes\scene.h">
+      <Filter>Source Files\include\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="include\engine\scenes\editor_scene.h">
+      <Filter>Source Files\include\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="include\engine\entities\camera.h">
+      <Filter>Source Files\include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="include\engine\entities\model.h">
+      <Filter>Source Files\include\entities</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\shaders\default_vertex.glsl">
+      <Filter>Source Files\res\shaders</Filter>
+    </None>
+    <None Include="res\shaders\default_fragment.glsl">
+      <Filter>Source Files\res\shaders</Filter>
+    </None>
+  </ItemGroup>
+</Project>

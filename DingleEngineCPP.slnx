@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="DingleEngineCPP.vcxproj" Id="8c49989c-2c8b-41f9-982e-eb1489441ecb" />
+</Solution>
