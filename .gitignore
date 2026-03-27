@@ -1,6 +1,6 @@
 .vs/
-include/glad
-include/GLFW
-include/glm
-include/KHR
+include/glad/
+include/GLFW/
+include/glm/
+include/KHR/
 lib/
