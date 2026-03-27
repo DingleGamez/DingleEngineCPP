@@ -15,11 +15,14 @@ public:
 	Scene* current_scene;
 private:
 	void init();
+	void frames();
 	void update();
 
 	unsigned int width;
 	unsigned int height;
 	const char* title;
+	float start_time = glfwGetTime();
+	unsigned int frame_count = 0;
 
 	GLFWwindow* window;
 

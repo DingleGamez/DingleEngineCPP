@@ -32,6 +32,21 @@ void Window::change_scene(int scene) {
 	}
 }
 
+void Window::frames() {
+	frame_count += 1;
+	float current_time = glfwGetTime();
+	float fps = 0;
+
+	if (current_time - start_time >= 1.0) {
+		fps = frame_count / (current_time - start_time);
+
+		std::cout << "FPS: " << fps << std::endl;
+
+		frame_count = 0;
+		start_time = current_time;
+	}
+}
+
 void Window::init() {
 	glfwInit();
 
@@ -58,6 +73,8 @@ void Window::init() {
 
 void Window::update() {
 	while (!glfwWindowShouldClose(window)) {
+		frames();
+
 		current_scene->update();
 
 		glfwSwapBuffers(window);

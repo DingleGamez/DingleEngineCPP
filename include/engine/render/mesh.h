@@ -4,20 +4,35 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/quaternion.hpp>
 #include <glm/gtc/type_ptr.hpp>
+#include <vector>
+
+#include "engine/render/shader.h"
+
+struct Vertex {
+	glm::vec3 position;
+	glm::vec3 normal;
+	glm::vec2 tex_coords;
+};
+
+struct Texture {
+	unsigned int id;
+	std::string path;
+};
 
 class Mesh {
 public:
-	Mesh();
+	std::vector<Vertex>vertices;
+	std::vector<unsigned int>indices;
+	std::vector<Texture>textures;
 
-	glm::vec3 position = glm::vec3(0.0f);
-	glm::quat rotation = glm::vec3(0.0f);
-	glm::vec3 scale = glm::vec3(1.0f);
+	Mesh(std::vector<Vertex>vertices, std::vector<unsigned int>indices, std::vector<Texture>textures);
 
 	unsigned int vao;
 
-	void init();
-	void draw();
+	void draw(Shader& shader);
 private:
 	unsigned int vbo;
 	unsigned int ebo;
+
+	void setup_mesh();
 };

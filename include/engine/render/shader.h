@@ -10,6 +10,9 @@ public:
     void attach();
     void detach();
     void upload_mat4(const std::string& name, const glm::mat4& mat);
+    void upload_vec3(const std::string& name, const glm::vec3& vec);
+    void upload_vec3(const std::string& name, float x, float y, float z);
+    void upload_texture(const std::string& name, int value);
 
 private:
     std::string load_file(const char* path);

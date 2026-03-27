@@ -2,14 +2,14 @@
 
 #include <vector>
 
-#include "engine/render/mesh.h"
+#include "engine/entities/model.h"
 
 class Scene {
 public:
-	Scene() { std::cout << "gay" << std::endl; };
+	Scene() {};
+
+	std::vector<Model*>models;
 
 	virtual void init() {};
 	virtual void update() {};
-
-	std::vector<Mesh*>meshes;
 };

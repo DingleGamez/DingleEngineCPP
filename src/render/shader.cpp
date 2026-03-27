@@ -64,6 +64,18 @@ void Shader::upload_mat4(const std::string& name, const glm::mat4& mat) {
     glUniformMatrix4fv(glGetUniformLocation(shader_program, name.c_str()), 1, GL_FALSE, &mat[0][0]);
 }
 
+void Shader::upload_vec3(const std::string& name, const glm::vec3& value) {
+    glUniform3fv(glGetUniformLocation(shader_program, name.c_str()), 1, &value[0]);
+}
+
+void Shader::upload_vec3(const std::string& name, float x, float y, float z) {
+    glUniform3f(glGetUniformLocation(shader_program, name.c_str()), x, y, z);
+}
+
+void Shader::upload_texture(const std::string& name, int value) {
+    glUniform1i(glGetUniformLocation(shader_program, name.c_str()), value);
+}
+
 void Shader::attach() {
     glUseProgram(shader_program);
 }

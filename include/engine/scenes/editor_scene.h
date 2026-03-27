@@ -3,7 +3,7 @@
 #include <vector>
 
 #include "engine/render/renderer.h"
-#include "engine/render/mesh.h"
+#include "engine/entities/model.h"
 #include "engine/scenes/scene.h"
 #include "engine/entities/camera.h"
 

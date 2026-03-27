@@ -10,16 +10,17 @@ EditorScene::EditorScene() : camera(glm::vec3(0.0f)) {
 void EditorScene::init() {
 	std::cout << "Scene init" << std::endl;
 
-	Mesh* cube = new Mesh();
-	cube->init();
-	meshes.push_back(cube);
+	Model* city = new Model("res/models/city/scene.gltf");
+	models.push_back(city);
+
+	Model* backpack = new Model("res/models/backpack/backpack.obj");
+	models.push_back(backpack);
 
 	renderer->init();
 }
 
 void EditorScene::update() {
-	meshes[0]->rotation.z += 1.0f;
-	meshes[0]->position.z += 0.025f;
+	models[0]->rotation.y += 0.1f;
 
 	renderer->update();
 }
