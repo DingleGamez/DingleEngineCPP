@@ -1,6 +1,8 @@
 C:\Users\eensm\Desktop\DingleEngineCPP\src\entities\camera.cpp;C:\Users\eensm\Desktop\DingleEngineCPP\DingleEngineCPP\x64\Debug\camera.obj
 C:\Users\eensm\Desktop\DingleEngineCPP\src\entities\model.cpp;C:\Users\eensm\Desktop\DingleEngineCPP\DingleEngineCPP\x64\Debug\model.obj
 C:\Users\eensm\Desktop\DingleEngineCPP\src\glad.c;C:\Users\eensm\Desktop\DingleEngineCPP\DingleEngineCPP\x64\Debug\glad.obj
+C:\Users\eensm\Desktop\DingleEngineCPP\src\listeners\key_listener.cpp;C:\Users\eensm\Desktop\DingleEngineCPP\DingleEngineCPP\x64\Debug\key_listener.obj
+C:\Users\eensm\Desktop\DingleEngineCPP\src\listeners\mouse_listener.cpp;C:\Users\eensm\Desktop\DingleEngineCPP\DingleEngineCPP\x64\Debug\mouse_listener.obj
 C:\Users\eensm\Desktop\DingleEngineCPP\src\main.cpp;C:\Users\eensm\Desktop\DingleEngineCPP\DingleEngineCPP\x64\Debug\main.obj
 C:\Users\eensm\Desktop\DingleEngineCPP\src\render\mesh.cpp;C:\Users\eensm\Desktop\DingleEngineCPP\DingleEngineCPP\x64\Debug\mesh.obj
 C:\Users\eensm\Desktop\DingleEngineCPP\src\render\renderer.cpp;C:\Users\eensm\Desktop\DingleEngineCPP\DingleEngineCPP\x64\Debug\renderer.obj

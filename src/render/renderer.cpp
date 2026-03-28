@@ -18,7 +18,7 @@ void Renderer::init() {
 
 	shader.attach();
 
-	camera->adjust_projection(800, 600);
+	camera->adjust_projection(1280, 720);
 
 	shader.upload_mat4("projection", camera->get_projection());
 }

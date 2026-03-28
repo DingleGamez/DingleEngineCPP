@@ -14,6 +14,8 @@ public:
 
 	Scene* current_scene;
 private:
+	Window();
+
 	void init();
 	void frames();
 	void update();
@@ -25,8 +27,6 @@ private:
 	unsigned int frame_count = 0;
 
 	GLFWwindow* window;
-
-	Window();
 
 	Window(const Window&) = delete;
 	Window& operator=(const Window&) = delete;

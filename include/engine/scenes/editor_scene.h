@@ -14,7 +14,7 @@ public:
 	Camera camera;
 
 	void init() override;
-	void update() override;
+	void update(float dt) override;
 private:
 	Renderer* renderer = nullptr;
 };

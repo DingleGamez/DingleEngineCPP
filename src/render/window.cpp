@@ -3,6 +3,8 @@
 
 #include "engine/render/window.h"
 #include "engine/scenes/editor_scene.h"
+#include "engine/listeners/mouse_listener.h"
+#include "engine/listeners/key_listener.h"
 
 Window::Window() : 
 	window(nullptr) {
@@ -64,7 +66,11 @@ void Window::init() {
 		return;
 	}
 
+	glfwSetMouseButtonCallback(window, MouseListener::mouse_button_callback);
+	glfwSetKeyCallback(window, KeyListener::key_callback);
+
 	glfwMakeContextCurrent(window);
+	glfwSwapInterval(1);
 
 	gladLoadGL();
 
@@ -72,10 +78,19 @@ void Window::init() {
 }
 
 void Window::update() {
+	float begin_time = glfwGetTime();
+	float end_time = 0.0f;
+	float dt = -1.0f;
+
 	while (!glfwWindowShouldClose(window)) {
 		frames();
 
-		current_scene->update();
+		current_scene->update(dt);
+
+		end_time = glfwGetTime();
+
+		dt = end_time - begin_time;
+		begin_time = end_time;
 
 		glfwSwapBuffers(window);
 		glfwPollEvents();

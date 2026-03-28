@@ -49,6 +49,12 @@
     <Filter Include="Source Files\res\shaders">
       <UniqueIdentifier>{8fe1dfb1-5898-471d-8118-215d3830109a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\include\listeners">
+      <UniqueIdentifier>{9e9ddc8f-43c4-4889-a161-1bdb84b49d6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\listeners">
+      <UniqueIdentifier>{8dea8e2a-6b30-47ff-9520-99d73ec2e914}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\glad.c">
@@ -78,6 +84,12 @@
     <ClCompile Include="src\entities\model.cpp">
       <Filter>Source Files\src\entities</Filter>
     </ClCompile>
+    <ClCompile Include="src\listeners\mouse_listener.cpp">
+      <Filter>Source Files\src\listeners</Filter>
+    </ClCompile>
+    <ClCompile Include="src\listeners\key_listener.cpp">
+      <Filter>Source Files\src\listeners</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\engine\render\window.h">
@@ -103,6 +115,12 @@
     </ClInclude>
     <ClInclude Include="include\engine\entities\model.h">
       <Filter>Source Files\include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="include\engine\listeners\mouse_listener.h">
+      <Filter>Source Files\include\listeners</Filter>
+    </ClInclude>
+    <ClInclude Include="include\engine\listeners\key_listener.h">
+      <Filter>Source Files\include\listeners</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

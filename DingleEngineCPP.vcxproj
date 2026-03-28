@@ -135,6 +135,8 @@
     <ClCompile Include="src\entities\camera.cpp" />
     <ClCompile Include="src\entities\model.cpp" />
     <ClCompile Include="src\glad.c" />
+    <ClCompile Include="src\listeners\key_listener.cpp" />
+    <ClCompile Include="src\listeners\mouse_listener.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\render\mesh.cpp" />
     <ClCompile Include="src\render\renderer.cpp" />
@@ -145,6 +147,8 @@
   <ItemGroup>
     <ClInclude Include="include\engine\entities\camera.h" />
     <ClInclude Include="include\engine\entities\model.h" />
+    <ClInclude Include="include\engine\listeners\key_listener.h" />
+    <ClInclude Include="include\engine\listeners\mouse_listener.h" />
     <ClInclude Include="include\engine\render\mesh.h" />
     <ClInclude Include="include\engine\render\renderer.h" />
     <ClInclude Include="include\engine\render\shader.h" />

@@ -6,7 +6,7 @@
 
 int main() {
 	Window& window = Window::get();
-	window.run(800, 600, "Dingle Engine C++");
+	window.run(1280, 720, "Dingle Engine C++");
 
 	return 0;
 }

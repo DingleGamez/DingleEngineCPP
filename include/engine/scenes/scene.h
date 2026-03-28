@@ -11,5 +11,5 @@ public:
 	std::vector<Model*>models;
 
 	virtual void init() {};
-	virtual void update() {};
+	virtual void update(float dt) {};
 };
